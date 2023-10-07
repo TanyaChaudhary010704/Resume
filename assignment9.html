@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h2{
+        margin-bottom: 7px;
+      }
+      .page{
+        text-align: left;
+        width: 600px;
+        position: relative;
+        /* left: 0; */
+        /* transform: translate(0, 0); */
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.316);
+      }
+      .header{
+        background-color: rgba(0, 0, 0, 0.682);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgb(211, 210, 210);
+      }
+      .header p{
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      .right{
+        height: 150px;
+        width: 150px;
+        border-radius: 200px;
+        background: rgb(219, 219, 219);
+      }
+      .block1{
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        position: relative;
+        top: 140px;
+        left: -5px;
+        border-radius: 20px;
+      }
+      .block2{
+        height: 150px;
+        width: 150px;
+        border-radius: 200px;
+        background: rgb(243, 243, 243);
+        position: relative;
+        top: -5px;
+        left: 20px;
+      }
+      img{
+        height: 150px;
+        border-radius: 200px;
+        position: relative;
+        top: -10px;
+        left: 0px;
+      }
+      .parent{
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+      .main{
+        /* flex: 1; */
+        flex-basis: 0.3;
+        display: flex;
+        flex-direction: column;
+      }
+      .main .row{
+        display: flex;
+        flex-direction: row;
+        padding:5px;
+        justify-content: flex-start;
+      }
+      .row div{
+        padding:15px 40px;
+        width: 100%;
+      }
+      .details {
+        flex-basis: 0.3;
+        margin: 0 15px;
+        padding: 15px;
+        background-color: lightgray;
+      }
+      .details .row{
+        justify-content: space-around;
+        text-align:left ;
+        padding: 15px;
+      }
+      table{
+        border-color: rgb(251, 250, 250); 
+        margin-bottom:10px ; 
+      }
+      td,th{
+        padding: 20px;
+      }
+      .academics{
+        display: flex;
+        flex-basis: 0.3;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding:0 20px;
+      }
+      .details , table, .row div,.header{
+        border-bottom: 1px solid rgb(211, 210, 210);
+      }
+
+    </style>
+  </head>
+  <body>
+    <center>
+    <div class="page">
+    <div class="header">
+      <div class="name">
+        <h2>Tanya Chaudhary</h2>
+        <p>22b1531043@abes.ac.in</p>
+        <p>7599353266</p>
+      </div>
+      <div class="right">
+        <div class="block1">
+        </div>
+        <div class="block2">
+         <img src="./me1.jpeg"> 
+        </div>
+      </div>
+    </div>
+    <div class="parent">
+    <div class="details">
+      <h2>Personal Details</h2>
+      <div class="row">
+        <h4>Name:</h4>
+        <p>Tanya Chaudhary</p>
+      </div>
+      <div class="row">
+        <h4>Father's Name:</h4>
+        <p>Mr. Rajesh Kumar</p>
+      </div>
+      <div class="row">
+        <h4>Mother's Name:</h4>
+        <p>Mrs. Vandana Chaudhary</p>
+      </div>
+      <div class="row">
+        <h4>Gender:</h4>
+        <p>Female</p>
+      </div>
+      <div class="row">
+        <h4>Contact:</h4>
+        <p>7599353266</p>
+      </div>
+      <div class="row">
+        <h4>Address:</h4>
+        <p>802-Olive, SVP Gulmohar Residency, <br> Ahinsa Khand-2, Indrapuram, Ghaziabad</p>
+      </div>
+      
+    </div>
+    <div class="main"> 
+      <div class="row">
+        <div>
+          <h2>Career Objective</h2>
+        <ul>
+          <li>Contributing and learrning new skills in Full Stack Development.</li>
+          <li>Working on real time projects dealing with prominent surrounding problems.</li>
+        </ul>
+      </div>
+      </div>
+      <div class="row">
+        <div>
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>Full Stack Development | UI designing.</li>
+            <li>Problem solving | critical thinking.</li>
+            <li>Automation | Ui path</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <h2>Hobbies</h2>
+          <ul>
+            <li>Making Creative UI designs</li>
+            <li>Art | Portraits</li>
+            <li>Sculputing | Embroidery | Stitching</li>
+          </ul>        
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <h2>Achievements</h2>
+          <ul>
+            <li>4 star rating in C (Hackerank)</li>
+            <li>3 star rating in Problem solving (Hackerank)</li>
+            <li>Worked as Bharat Intern (Virtual Internship)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="academics">
+    <table cellspacing="0" border="1">
+      <tr>
+        <th>S no.</th>
+        <th>Degree</th>
+        <th>Passing <br> Year</th>
+        <th>Percent</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>10 <sup>th</sup></td>
+        <td>2020</td>
+        <td>97%</td>
+        <td><a href="https://drive.google.com/file/d/1jfVJJqhwFKCSONlbREYXrhtc21olYJmP/view?usp=drive_link">click here</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>12 <sup>th</sup></td>
+        <td>2022</td>
+        <td>94%</td>
+        <td><a href="https://drive.google.com/file/d/1jjT1zYERraCr2hX5lFoHm9QyYdRPYj3a/view?usp=drive_link">click here</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Btech</td>
+        <td>2026</td>
+        <td>86.4%</td>
+        <td><a href="#">click here</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Internship</td>
+        <td>2023</td>
+        <td>-</td>
+        <td><a href="#">click here</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="#">click here</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</center>
+  </body>
+</html>
